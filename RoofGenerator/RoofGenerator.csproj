@@ -116,8 +116,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="GetTopFaces.cs" />
     <Compile Include="License\AboutUI.xaml.cs">
       <DependentUpon>AboutUI.xaml</DependentUpon>
     </Compile>

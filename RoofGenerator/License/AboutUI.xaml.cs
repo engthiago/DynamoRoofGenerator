@@ -33,11 +33,19 @@ namespace Register
             this.Title = "RoofGenerator by Onbim and ONBOX: " + appVersion;
             lblVersionInfo.Text = appVersion;
 
-            if (RoofGenerator.RoofGenerator.RoofStorage.isRegister)
+
+            if (License.GetUserInfo.CheckLicense() == Autodesk.Revit.UI.Result.Succeeded)
             {
                 lblLicenseInfo.Text = "Licensed.";
                 lblLicenseInfo.Foreground = new SolidColorBrush(Color.FromRgb(0, 70, 255));
                 btnLicense.Content = "Deactivate license";
+                btnLicense.Width = 120;
+            }
+            else
+            {
+                lblLicenseInfo.Text = "Not registered.";
+                lblLicenseInfo.Foreground = new SolidColorBrush(Colors.Red);
+                btnLicense.Content = "Activate license";
                 btnLicense.Width = 120;
             }
         }
