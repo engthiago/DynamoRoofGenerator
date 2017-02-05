@@ -3,6 +3,7 @@ using Autodesk.Revit.DB.IFC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Dyn = Revit.Elements;
@@ -20,6 +21,18 @@ namespace RoofGenerator
 
     static public partial class RoofGenerator
     {
+
+        static internal class RoofStorage
+        {
+            static internal Autodesk.Revit.ApplicationServices.Application revitApp;
+            static internal bool isRegister = false;
+
+            static internal string licensePath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData) + "\\onBimBox\\";
+            static internal string dllVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            static internal string licenseFile = licensePath + "lic" + dllVersion + ".lc";
+
+            static internal string roofGeneratorVersion = "";
+        }
 
         static private IList<XYZ> GetOrganizedPoints(PlanarFace targetPlanarFace)
         {

@@ -1,0 +1,31 @@
+﻿<Window x:Class="Register.AlreadyRegisteredUI" x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Activate node" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="10" HorizontalAlignment="Stretch" >
+            <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Image Width="64" Height="64" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,10" Source="/RoofGenerator;component/Resources/ONBOX_Icon.png"/>
+                <Image Width="64" Height="64" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="20,10" Source="/RoofGenerator;component/Resources/ONBOX_Icon.png"/>
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Stretch" Margin="0,30,0,0">
+                <Label Content="E-mail:"/>
+                <TextBox x:Name="txtEmail" HorizontalAlignment="Right" MinWidth="200"/>
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Stretch" Margin="0,10,0,0">
+                <Label Content="Password:"/>
+                <PasswordBox x:Name="txtPass" HorizontalAlignment="Right" MinWidth="200"/>
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Label x:Name="lblNewRegister" Content="Signup" Cursor="Hand" Foreground="#FF0046FF" MouseDown="lblNewRegister_MouseDown"/>
+                <Label x:Name="lblRecoverPass" Margin="30,0,0,0" Content="Recover password" Cursor="Hand" Foreground="#FF0046FF" MouseDown="lblRecoverPass_MouseDown"/>
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Center" Margin="0,0,0,0">
+                <Label x:Name="lblAbout" Content="About this node" Cursor="Hand" Foreground="#FF0046FF" MouseDown="lblAbout_MouseDown"/>
+            </DockPanel>
+            <DockPanel HorizontalAlignment="Stretch" Margin="0,20,0,0">
+                <Button x:Name="btnOK"  Content="Activate" HorizontalAlignment="Stretch" MinWidth="200" Click="btnOK_Click" IsDefault="True" MinHeight="23" />
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>

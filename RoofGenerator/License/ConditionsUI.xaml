@@ -1,0 +1,555 @@
+﻿<Window x:Class="Register.ConditionsUI" x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Terms and conditions" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Width="553" SizeToContent="Height">
+    <StackPanel Margin="10">
+        <StackPanel>
+            <ScrollViewer MaxHeight="450">
+                <RichTextBox TextChanged="RichTextBox_TextChanged" BorderBrush="{x:Null}" IsReadOnly="True">
+                    <FlowDocument>
+                        <Paragraph FontWeight="Bold" FontSize="18.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Center">
+                            <Span>
+                                <Run Text="CONTRATO DE LICENÇA DE USUÁRIO FINAL (EULA)"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left"/>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="Por favor, leia esta EULA atenciosamente,"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="Ao clicar em 'Aceito', Vossa senhoria aceita estar de acordo com as exigências deste documento, se "/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span Foreground="#FF545454" FontFamily="Arial">
+                                <Run Text="V.S.ª."/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text=" não acorda com quaisquer itens deste contrato, deve-se então, clicar em 'Não Aceito' e não fazer uso deste software."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left"/>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DAS DEFINIÇÕES"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="EULA"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa contrato de licença de usuário final, que se refere em particular a este documento, incluindo emendas necessárias no futuro. "/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Aplicativo"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa um software, aplicação, programa de computador."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="O aplicativo"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa este software especifico, objeto desta EULA."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Este aplicativo"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa este software especifico, objeto desta EULA."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Central de notificações"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa um painel gráfico na interface do aplicativo, reservado para o licenciador enviar informações opcionais ao usuário."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Hardware"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Run Text="' Dispositivo físico"/>
+                            <Run Text="."/>
+                            <Run Text=" "/>
+                            <Run Text="E"/>
+                            <Run Text="letrônico ou mecânico."/>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Bug"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa um defeito, problema em um aplicativo que pode acarretar em uma situação adversa, comprometendo a utilização, performance de um programa de computador ou em casos extremos, a perda de dados, exceto nos casos:"/>
+                            </Span>
+                        </Paragraph>
+                        <List MarkerStyle="LowerLatin" Margin="0" Padding="0">
+                            <ListItem Margin="48,0,0,0">
+                                <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                                    <Span>
+                                        <Run Text="Omissão do utilizador ou terceiro;"/>
+                                    </Span>
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem Margin="48,0,0,0">
+                                <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                                    <Span>
+                                        <Run Text="Utilização indevida do aplicativo;"/>
+                                    </Span>
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem Margin="48,0,0,0">
+                                <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                                    <Span>
+                                        <Run Text="Falha do usuário ao observar as obrigações da EULA;"/>
+                                    </Span>
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem Margin="48,0,0,0">
+                                <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                                    <Span>
+                                        <Run Text="Incompatibilidade do aplicativo em relação à diferentes sistemas, redes, outros aplicativos, hardware;"/>
+                                    </Span>
+                                </Paragraph>
+                            </ListItem>
+                        </List>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text=" '"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Propriedade Intelectual"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa toda propriedade e direitos de produtos registrados ou não registrados, incluindo aplicativos, banco de dados e quaisquer tipos de informações, know-how, negociações, marcas, logotipos, serviços, patentes, design ou qualquer objeto de produção."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Licença"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa direito de utilização de um produto, para fins específicos expressos em contrato, de forma gratuita ou paga."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Licenciador"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa THIAGO AUGUSTO BARROS DE ALMEIDA, Engenheiro civil, criador deste aplicativo, morador da cidade de Rondonópolis, Mato Grosso."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Código fonte"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa o formato legível à pessoas que originou as funcionalidades de determinado aplicativo, ou qualquer forma ou parte do software."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Termos"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa os termos deste EULA, compreendendo todo o documento."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Update"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa alguma correção de erro, ou atualização minoritária no aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Upgrade"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa atualização majoritária, que geralmente altera ou expande funcionalidade do aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Usuário"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa a pessoa ou empresa que utiliza o aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Suporte"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa ajuda na correção de problemas ou erros específicos que a utilização do software pode acarretar. Mas não significa treinamento de nenhuma natureza."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Treinamento"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa ensinar a utilizar o software, passagem de conhecimentos sistemáticos de uma ou várias situações e ferramentas."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="'"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span FontWeight="Bold">
+                                <Run Text="Manutenção"/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="' Significa corrigir erros, implementar novas soluções, criar atualizações para determinado software."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DOS TERMOS"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="Este EULA se mantem vigente até que um novo documento seja publicado. As adições serão notificadas a V.S.ª. através de um de nossos meios de comunicação. (Pelo próprio aplicativo, pelo nosso site, página no Facebook ou e-mail)."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="Qualquer desacordo por parte do usuário em relação à este documento o mesmo deve rejeitar este documento e desinstalar o aplicativo de seu computador."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DOS INFORMAÇÕES"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O aplicativo não guarda informações em relação a cadastros nacionais e internacionais destes usuários, bem como não guarda informações bancarias ou financeiras de natureza quaisquer."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O aplicativo guarda informações e dados que identificam o usuário como uma pessoa ou empresa, como endereço de conta de e-mail, nome com sobrenome, razão social com nome fantasia."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O aplicativo guarda informações e dados que identificam os computadores licenciados para validar a quantidade de licenças ativas e controle de acessos ao aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador não comercializará nenhuma destas informações, mas poderá contatar o usuário para novas atualizações e notificações de parceiros comerciais via e-mail ou pela central de notificações do aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DA CENTRAL NOTIFICAÇÕES"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador se reserva no direito de enviar informações como atualizações e notificações de parceiros comerciais via central de notificações, não sendo o usuário obrigado a interagir nem desembolsar qualquer quantia para utilizar o aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DA LICENÇA"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador permite acesso à este aplicativo por data indeterminada para:"/>
+                            </Span>
+                        </Paragraph>
+                        <List MarkerStyle="LowerLatin" Margin="0" Padding="0">
+                            <ListItem Margin="48,0,0,0">
+                                <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                                    <Span>
+                                        <Run Text="Instalar o aplicativo;"/>
+                                    </Span>
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem Margin="48,0,0,0">
+                                <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                                    <Span>
+                                        <Run Text="Utilizar este aplicativo em no máximo 10 computadores;"/>
+                                    </Span>
+                                </Paragraph>
+                            </ListItem>
+                            <ListItem Margin="48,0,0,0">
+                                <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                                    <Span>
+                                        <Run Text="Utilizar este aplicativo para situações comerciais, não comerciais, estudantis, sem fins lucrativos."/>
+                                    </Span>
+                                </Paragraph>
+                            </ListItem>
+                        </List>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O Usuário não poderá licenciar este aplicativo à terceiros ou se apoderar de nenhuma propriedade intelectual contida neste aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O Usuário não poderá comercializar, revender, alugar, lançar, distribuir ou redistribuir este aplicativo de nenhuma forma."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O Usuário não poderá alterar, editar, adaptar este aplicativo de nenhuma forma, seja elas, decompilar ou aplicar qualquer tipo de engenharia reversa neste aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DO CÓDIGO FONTE"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O código fonte deste aplicativo é produto da disponibilidade de acesso que a AUTODESK, empresa estadunidense através de um acordo firmado por EULA entre esta e o licenciador, independentemente deste documento. Toda parcela de acesso disponibilizada pela AUTODESK é de propriedade exclusiva AUTODESK."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="A parcela do código fonte criado pelo licenciador é de inteira propriedade deste."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="Nenhuma parte deste documento autoriza o usuário ou qualquer outra pessoa a acessar, utilizar ou constituir qualquer licença do código fonte. "/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="18.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span FontSize="16">
+                                <Run Text="DA MANUTENÇÃO"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador se exime da responsabilidade de fazer manutenções para este software de qualquer forma, bem como quaisquer tipos de garantia de utilização ou ressarcimento por eventuais bugs, erros, má utilização ou negligencia na utilização deste software."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador se resguarda ao direito de interromper a utilização deste software se achar necessária, não tendo o usuário, direito de utilização posterior à esta data."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DO SUPORTE"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador pode se eximir de qualquer tipo de serviços de suporte que julgar necessário."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador poderá firmar contratos de consultoria para dar suporte a usuários. Tais contratos serão regidos por seus próprios termos de acordo com as leis vigentes."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador se resguarda ao direito de aprovar ou não acordos entre usuários e terceiros que envolvam suporte a este aplicativo, quando julgar necessário, tais acordos devem ser comunicados ao licenciador."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DA REMUNERAÇÃO"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O usuário terá acesso gratuito a este aplicativo por tempo indeterminado, salvo se notificado por e-mail, com no mínimo 15 (quinze) dias corridos, sendo assim o usuário poderá optar ou não pela continuidade da utilização, não sendo obrigado a ressarcir o licenciador por utilização retroativa."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O usuário deverá remunerar o licenciador para quaisquer tipos de serviços que envolvam ou não este aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DA GARANTIA"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador se exime de qualquer tipo de garantia de utilização deste aplicativo."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O usuário poderá optar por encaminhar reclamações e sugestões exclusivamente por e-mail para o licenciador em "/>
+                            </Span>
+                            <Run Text=" "/>
+                            <Hyperlink NavigateUri="mailto:onbim@onboxdesign.com.br">
+                                <Span Foreground="#FF0563C1" TextDecorations="Underline">
+                                    <Run Text="onbim@onboxdesign.com.br"/>
+                                </Span>
+                            </Hyperlink>
+                            <Run Text=" "/>
+                            <Span>
+                                <Run Text="."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O usuário deve estar ciente de que softwares complexos nunca estão livres de erros, defeitos, bugs ou outros problemas. Então o licenciador não garante que este aplicativo estará livre de quaisquer destes problemas e se exime de qualquer responsabilidade em relação à este tipo de falha."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O usuário deve estar ciente de que softwares complexos nunca estão livres de problemas de segurança e eventuais vulnerabilidades. Então o licenciador não garante que este aplicativo estará livre de quaisquer problema de segurança ou ataques de hackers ou crackers e exime de responsabilidades em relação a este tipo de falha."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DA INDENIZAÇÃO"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="Por se tratar de um software inteiramente gratuito, o licenciador se exime de quaisquer tipos de indenização pela má utilização, negligencia do usuário, incompatibilidade, bugs, erros ou problemas de segurança deste software."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O usuário deverá se atentar à todos os itens deste contrato, estando ciente de que poderá sofrer penalidades judiciais ou extrajudiciais pela quebra de acordo deste contrato."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O usuário devera indenizar o licenciador por quaisquer danos, perdas ou despesas sofridas pelo licenciador acarretadas pela má utilização, negligencia ou má fé do usuário."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="DA VIGÊNCIA E QUEBRA DO CONTRATO"/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="Este contrato estará vigente até que uma emenda ou alteração seja feita no futuro, que será encaminhada ao usuário por meio de e-mail. Sendo necessário a releitura e em um possível desacordo, desinstalar o aplicativo e interromper o seu uso, sendo então, não submetido aos novos termos."/>
+                            </Span>
+                        </Paragraph>
+                        <Paragraph FontSize="14.6666666666667" FontFamily="Calibri" Margin="0,0,0,10.67" TextAlignment="Left">
+                            <Span>
+                                <Run Text="O licenciador poderá interromper a utilização deste software a qualquer momento, desde que notifique, com no mínimo 15 (quinze) dias corridos de antecedência os usuários por e-mail. "/>
+                            </Span>
+                        </Paragraph>
+                    </FlowDocument>
+                </RichTextBox>
+            </ScrollViewer>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" >
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch" Margin="0,10,0,5" HorizontalAlignment="Right">
+                <Button x:Name="btnCancel" Content="I Desagree" MinHeight="30" MinWidth="100" Click="btnCancel_Click"/>
+                <Button x:Name="btnOK" Content="I Agree" MinHeight="30" Margin="10,0,0,0" MinWidth="100" Click="btnOK_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>

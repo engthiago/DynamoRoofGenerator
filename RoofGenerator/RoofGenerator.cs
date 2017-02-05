@@ -10,6 +10,7 @@ using DynApp = Revit.Application;
 using Autodesk.Revit.DB;
 using Autodesk.DesignScript.Runtime;
 using Autodesk.Revit.DB.IFC;
+using Autodesk.Revit.UI;
 
 namespace RoofGenerator
 {
@@ -20,6 +21,12 @@ namespace RoofGenerator
         static public string CreateRoof(Dyn.Element roofElement, IList<Dyn.FamilyType> listOfFamilyTypes, Dyn.FamilyType ridgeFamilyType)
         {
             Document doc = DocumentManager.Instance.CurrentDBDocument;
+            RoofStorage.revitApp = doc.Application;
+
+            if (License.GetUserInfo.CheckLicense() != Result.Succeeded)
+            {
+                throw new Exception("Error, Please register this node");
+            }
 
             FootPrintRoof currentRoof = roofElement.InternalElement as FootPrintRoof;
 
