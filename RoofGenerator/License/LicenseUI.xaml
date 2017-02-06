@@ -63,9 +63,6 @@
                             <Label x:Name="lblConditions" Content="I Agree with terms of use." MinHeight="23" Foreground="#FF0046FF" Cursor="Hand" MouseDown="lblConditions_MouseDown"/>
                         </DockPanel>
                     </DockPanel>
-                    <DockPanel HorizontalAlignment="Center">
-                        <Label x:Name="lblAbout" Content="About this node" Cursor="Hand" Foreground="#FF0046FF" MouseDown="lblAbout_MouseDown_1"/>
-                    </DockPanel>
                 </StackPanel>
             </StackPanel>
             <StackPanel Margin="0,20,0,5">

@@ -289,12 +289,5 @@ namespace Register
         {
 
         }
-
-        private void lblAbout_MouseDown_1(object sender, MouseButtonEventArgs e)
-        {
-            this.Close();
-            AboutUI aboutUI = new AboutUI();
-            aboutUI.ShowDialog();
-        }
     }
 }

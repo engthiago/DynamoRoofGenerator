@@ -83,6 +83,16 @@ namespace RoofGenerator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OnbimOnbox {
+            get {
+                object obj = ResourceManager.GetObject("OnbimOnbox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ONBOX_Icon {
             get {
                 object obj = ResourceManager.GetObject("ONBOX_Icon", resourceCulture);
