@@ -18,16 +18,18 @@ namespace Register
         private void AboutWindow_Loaded(object sender, RoutedEventArgs e)
         {
             StringBuilder stringInfo = new StringBuilder();
-            stringInfo.AppendLine("O que é a ONBOX?");
+            stringInfo.AppendLine("What is onBIM with ONBOX?");
             stringInfo.AppendLine("");
-            stringInfo.AppendLine("A ONBOX é uma empresa atuante em diversas áreas da tecnologia e mídias digitais. Trabalhamos com realidade virtual para Oculus Rift, Samsung VR e criação de aplicativos, todos voltados para arquitetura, engenharia e construção civil.");
+            stringInfo.AppendLine("onBIM is a company whose vision is to be always ahead");
             stringInfo.AppendLine("");
-            stringInfo.AppendLine("Criamos produtos que auxiliam os profissionais a potencializarem seus fluxos de trabalho em ambiente BIM de uma forma intuitiva, rápida e dinâmica, guiadas sempre pelas normativas ABNT – NBR.");
+            stringInfo.AppendLine("Our goal is to provide solutions. Be it in projects, in modeling, compatibilization or even in processes.");
             stringInfo.AppendLine("");
-            stringInfo.AppendLine("Desenvolvemos também soluções exclusivas que promovem o marketing de seu empreendimento com potencialidade de vendas pois as interações e nível de realismo que alcançamos impressionam e agradam o usuário final.");
+            stringInfo.AppendLine("ONBOX is a company active in several areas of technology and digital media. We work with virtual reality for Oculus Rift, Samsung VR and application creation, all aimed at architecture, engineering and construction.");
             stringInfo.AppendLine("");
-            stringInfo.AppendLine("Fundada à partir do sonho do empreendedor, graduado em Design de Produto e em Engenharia Civil, em desvendar e buscar incessantemente novas tecnologias além de acompanhar e promover avanços na sociedade geek.");
-          
+            stringInfo.AppendLine("We create products that help professionals to enhance their workflows in a BIM environment in an intuitive, fast and dynamic way, always guided by brazilians regulations.");
+            stringInfo.AppendLine("");
+            stringInfo.AppendLine("Together, onBIM plus ONBOX are developing various solutions, uniting the potential of C # with Dynamo's flexibility.");
+
             textInformation.Text = stringInfo.ToString();
             string appVersion = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
             this.Title = "RoofGenerator by Onbim and ONBOX: " + appVersion;
