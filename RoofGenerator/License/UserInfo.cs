@@ -341,7 +341,7 @@ namespace License
 
         static internal void ConnectApp()
         {
-            string appId = "6947CC83-EF90-E9F3-FF92-5D32E497A000";
+            string appId = "14128025-14EE-5254-FFBA-60AE336B4F00";
             string secretKey = "FD83FEF2-147C-A978-FFD9-3D75599E5300";
             Backendless.InitApp(appId, secretKey);
         }
