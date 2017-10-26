@@ -1,4 +1,4 @@
-﻿using BackendlessAPI;
+﻿using DRGeneratorBackendless;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
 using System.Security.AccessControl;
-using BackendlessAPI.Exception;
+using DRGeneratorBackendless.Exception;
 using System.Globalization;
 using License;
 
@@ -177,9 +177,9 @@ namespace Register
                 }
                 catch (Exception excep)
                 {
-                    if (excep is BackendlessAPI.Exception.BackendlessException)
+                    if (excep is DRGeneratorBackendless.Exception.BackendlessException)
                     {
-                        var backExcep = excep as BackendlessAPI.Exception.BackendlessException;
+                        var backExcep = excep as DRGeneratorBackendless.Exception.BackendlessException;
                         string customInfo = "";
                         //bool isJustWarn = true;
 

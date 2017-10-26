@@ -1,4 +1,4 @@
-﻿using BackendlessAPI;
+﻿using DRGeneratorBackendless;
 using License;
 using System;
 using System.Collections.Generic;
@@ -111,9 +111,9 @@ namespace Register
                 }
                 catch (Exception excep)
                 {
-                    if (excep is BackendlessAPI.Exception.BackendlessException)
+                    if (excep is DRGeneratorBackendless.Exception.BackendlessException)
                     {
-                        var backExcep = excep as BackendlessAPI.Exception.BackendlessException;
+                        var backExcep = excep as DRGeneratorBackendless.Exception.BackendlessException;
                         string customInfo = "";
                         //bool isJustWarn = true;
 

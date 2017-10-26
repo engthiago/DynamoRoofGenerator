@@ -1,5 +1,5 @@
 ﻿using Autodesk.Revit.UI;
-using BackendlessAPI;
+using DRGeneratorBackendless;
 using Register;
 using System;
 using System.Collections.Generic;
@@ -343,7 +343,7 @@ namespace License
         {
             string appId = "6947CC83-EF90-E9F3-FF92-5D32E497A000";
             string secretKey = "FD83FEF2-147C-A978-FFD9-3D75599E5300";
-            Backendless.InitApp(appId, secretKey, "v1");
+            Backendless.InitApp(appId, secretKey);
         }
 
         #region UpdateAndAds commented
