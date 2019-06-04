@@ -100,19 +100,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions.cs" />
-    <Compile Include="License\AboutUI.xaml.cs">
-      <DependentUpon>AboutUI.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="License\AlreadyRegisteredUI.xaml.cs">
-      <DependentUpon>AlreadyRegisteredUI.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="License\ConditionsUI.xaml.cs">
-      <DependentUpon>ConditionsUI.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="License\LicenseUI.xaml.cs">
-      <DependentUpon>LicenseUI.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="License\UserInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -140,24 +127,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="License\AboutUI.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="License\AlreadyRegisteredUI.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="License\ConditionsUI.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="License\LicenseUI.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="FodyWeavers.xml" />
