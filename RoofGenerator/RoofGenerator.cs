@@ -23,11 +23,6 @@ namespace RoofGenerator
             Document doc = DocumentManager.Instance.CurrentDBDocument;
             RoofStorage.revitApp = doc.Application;
 
-            if (License.GetUserInfo.CheckLicense() != Result.Succeeded)
-            {
-                throw new Exception("Error, Please register this node");
-            }
-
             FootPrintRoof currentRoof = roofElement.InternalElement as FootPrintRoof;
 
             if (currentRoof == null)
